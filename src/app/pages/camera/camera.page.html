@@ -1,0 +1,10 @@
+<ion-header>
+ <app-toolbar-header title="camera"></app-toolbar-header>
+</ion-header>
+
+<ion-content>
+  <img width="100%" [src]="myImage || 'assets/shapes.svg' ">
+  <ion-button expand="block" (click)="takePicture()">
+    Take Picture
+  </ion-button>
+</ion-content>

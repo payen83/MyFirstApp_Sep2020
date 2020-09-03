@@ -1,0 +1,24 @@
+<ion-header>
+  <app-toolbar-header title="Photos">
+  </app-toolbar-header>
+</ion-header>
+
+
+ <ion-content>
+   <ion-list>
+     <ion-item *ngFor="let photo of photoViews" button="true" routerLink="/detail/{{ photo.id }}">
+       <ion-thumbnail slot="start">
+         <img [src]="photo.thumbnailUrl">
+       </ion-thumbnail>
+       <ion-label>
+         <ion-text>{{ photo.title }}</ion-text>
+         <p>{{ photo.url }}</p>
+       </ion-label>
+       <ion-note slot="end">Id: {{ photo.id }}</ion-note>
+     </ion-item>
+   </ion-list>
+   <ion-infinite-scroll (ionInfinite)="extractPhotos($event)">
+     <ion-infinite-scroll-content loadingSpinner="bubbles">
+     </ion-infinite-scroll-content>
+   </ion-infinite-scroll>
+ </ion-content>

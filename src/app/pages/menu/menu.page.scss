@@ -1,0 +1,23 @@
+.image {
+    //margin-top: 30px;
+    //margin-left: auto;
+    //margin-right: auto;
+    margin: 30px auto 0 auto;
+    width: 50%;
+
+    h2 {
+        font-size: 2em;
+        color: darkgrey;
+    }
+}
+
+.menu-item {
+    margin-top: 50px;
+    ion-icon {
+        font-size: 5em;
+        color: darkgrey;
+    }
+    h3 {
+        color: darkgrey;
+    }
+}

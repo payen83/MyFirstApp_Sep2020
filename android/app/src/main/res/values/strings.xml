@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LPPKN MOTG</string>
+    <string name="title_activity_main">LPPKN MOTG</string>
+    <string name="package_name">my.gov.lppkn.mobileonthego</string>
+    <string name="custom_url_scheme">my.gov.lppkn.mobileonthego</string>
+</resources>

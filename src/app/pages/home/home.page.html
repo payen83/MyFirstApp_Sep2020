@@ -1,0 +1,19 @@
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <app-toolbar-header></app-toolbar-header>
+
+  <h1>Welcome to My First App!</h1>
+  <p class="subtitle">SST Calculator</p>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>Price</ion-label>
+      <ion-input [(ngModel)]="price"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <h4>SST Amount: {{ sstAmount }}</h4>
+
+  <ion-button color="dark" shape="round" (click)="btnClick()">Calculate</ion-button>
+  
+</ion-content>

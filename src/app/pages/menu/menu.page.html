@@ -1,0 +1,34 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="image ion-text-center">
+    <img src="assets/logo.png"/>
+    <h2>My First App</h2>
+  </div>
+
+  <div class="menu-item ion-text-center">
+    <ion-grid>
+      <ion-row>
+        <ion-col button="true" routerLink="/home">
+          <ion-icon name="calculator-outline"></ion-icon>
+          <h3>Calculator</h3>
+        </ion-col>
+        <ion-col button="true" (click)="navigatePage()">
+          <ion-icon name="images-outline"></ion-icon>
+          <h3>Photos</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col button="true" routerLink="/camera">
+          <ion-icon name="camera-outline"></ion-icon>
+          <h3>Camera</h3>
+        </ion-col>
+        <ion-col button="true" routerLink="/map">
+          <ion-icon name="map"></ion-icon>
+          <h3>Map</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

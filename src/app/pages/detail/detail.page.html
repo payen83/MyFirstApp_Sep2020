@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="photoInfo.url || 'assets/shapes.svg'" width="100%"/>
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-text>{{ photoInfo.title }}</ion-text>
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-text>Id: {{ photoInfo.id }}</ion-text><br/>
+      <ion-text>Thumbnail: {{ photoInfo.thumbnailUrl }}</ion-text>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
